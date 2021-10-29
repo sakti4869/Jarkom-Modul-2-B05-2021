@@ -19,3 +19,5 @@ Pada soal nomor 2 diminta untuk membuat website utama dengan mengakses frangky.B
    ```
    pada zone `frangky.B05.com` untuk menandai file dari domain ada pada directory `/etc/bind/kaizoku/frangky.B05.com` seperti pada kotak hijau dibawah:
    ![2021-10-29 (4)](https://user-images.githubusercontent.com/71221969/139355780-ff24c7f5-4562-4d34-8d33-ece4ff108db7.png)
+ - Langkah 5: Untuk melakukan pengecekan, perlu dijalankan `ping www.frangky.B05.com` apabila sudah sukses seperti gambar dibawah maka pembuatan domain telah berhasil
+   ![2021-10-29 (5)](https://user-images.githubusercontent.com/71221969/139356064-14e90e9d-c4f3-4ef7-8599-39455b149f8f.png)
