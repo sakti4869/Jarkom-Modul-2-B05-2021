@@ -28,9 +28,9 @@ Pada soal nomor 3 dibuat subdomain `super.franky.yyy.com` dengan alias `www.supe
 
 ## Nomor 4
 Pada soal nomor 4 dibuat juga reverse domain untuk domain utama dengan cara menambahkan zone `2.179.192.in-addr.arpa` pada file `/etc/bind/named.conf.local`
-![2021-10-29 (12)](https://user-images.githubusercontent.com/71221969/139472726-000102fa-099e-4470-b213-7d1196755bce.png)
+![2021-10-29 (12)](https://user-images.githubusercontent.com/71221969/139472726-000102fa-099e-4470-b213-7d1196755bce.png)<br>
 Kemudian pada folder `kaizoku` ditambah file `2.179.192.in-addr.arpa` dengan isi sebagai berikut
-![2021-10-29 (13)](https://user-images.githubusercontent.com/71221969/139473069-35bedb44-4edd-4410-b193-76134a87f810.png)
+![2021-10-29 (13)](https://user-images.githubusercontent.com/71221969/139473069-35bedb44-4edd-4410-b193-76134a87f810.png)<br>
 Lalu dilakukan pengecekan dengan cara 
 ![2021-10-29 (14)](https://user-images.githubusercontent.com/71221969/139473326-5a7f5ea3-1127-4431-ad79-58eeaf2ffba7.png)
 
