@@ -12,3 +12,10 @@ Pada soal nomor 2 diminta untuk membuat website utama dengan mengakses frangky.B
    ![2021-10-29 (2)](https://user-images.githubusercontent.com/71221969/139354859-de08b1a1-e829-4141-b1c7-bd27f39cb8e5.png)
  - Langkah 3: tambahkan nameserver pada `Loguetown` dan `Alabasta` menjadi IP dari `EniesLobby`(kotak hijau) yaitu `192.179.2.2` supaya kita bisa mengakses DNS server `EniesLobby` melalui `Loguetown` atau `Alabasta`
    ![2021-10-29 (3)](https://user-images.githubusercontent.com/71221969/139355259-18d5ecd6-4b58-4f12-8c02-86c451d4f6c8.png)
+ - Langkah 4: Tidak lupa menambahkan:
+   ```
+   type master;
+   file "/etc/bind/kaizoku/frangky.B05.com";
+   ```
+   pada zone `frangky.B05.com` untuk menandai file dari domain ada pada directory `/etc/bind/kaizoku/frangky.B05.com` seperti pada kotak hijau dibawah:
+   ![2021-10-29 (4)](https://user-images.githubusercontent.com/71221969/139355780-ff24c7f5-4562-4d34-8d33-ece4ff108db7.png)
