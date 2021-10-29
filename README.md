@@ -34,3 +34,5 @@ Kemudian pada folder `kaizoku` ditambah file `2.179.192.in-addr.arpa` dengan isi
 Lalu dilakukan pengecekan dengan cara 
 ![2021-10-29 (14)](https://user-images.githubusercontent.com/71221969/139473326-5a7f5ea3-1127-4431-ad79-58eeaf2ffba7.png)
 
+## Nomor 5
+membuat Water7 sebagai DNS Slave untuk domain utama untuk memback up DNS master jika DNS master mati
