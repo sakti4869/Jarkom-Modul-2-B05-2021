@@ -21,3 +21,7 @@ Pada soal nomor 2 diminta untuk membuat website utama dengan mengakses frangky.B
    ![2021-10-29 (4)](https://user-images.githubusercontent.com/71221969/139355780-ff24c7f5-4562-4d34-8d33-ece4ff108db7.png)
  - Langkah 5: Untuk melakukan pengecekan, perlu dijalankan `ping www.frangky.B05.com` apabila sudah sukses seperti gambar dibawah maka pembuatan domain telah berhasil
    ![2021-10-29 (5)](https://user-images.githubusercontent.com/71221969/139356064-14e90e9d-c4f3-4ef7-8599-39455b149f8f.png)
+
+## Nomor 3
+Pada soal nomor 3 dibuat subdomain `super.franky.yyy.com` dengan alias `www.super.franky.yyy.com` yang diatur DNS nya di EniesLobby dan mengarah ke Skypie dengan menambahkan kotak hijau pada directory `etc/bind/kaizoku/frangky.B05.com`
+![2021-10-29 (10)](https://user-images.githubusercontent.com/71221969/139470390-ce66eb1b-ceb3-4628-8b23-a98aeada394a.png)
