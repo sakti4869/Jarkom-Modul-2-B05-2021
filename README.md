@@ -138,3 +138,44 @@ pada file `super.frangky.B05.com.conf`<br>
 Ketika dilakukan pengecekan `lynx super.frangky.B05.com/js` akan menampilkan folder js dalam public yang mana sebelumnya telah di forbiden:
 ![2021-10-30 (11)](https://user-images.githubusercontent.com/71221969/139531272-106e2748-0bc8-475f-9d97-98ad00cafed8.png)
 
+## Nomor 14
+web `www.general.mecha.franky.B05.com` hanya bisa diakses dengan port 15000 dan port 15500<br>
+
+Langkah 1:
+Pada file `ports.conf` tambahkan Listen menjadi:
+```
+Listen 15000
+Listen 15500
+```
+supaya dapat menerima request dari port 15000 dan 15500<br>
+
+Langkah 2:
+Ubah virtual host pada file `general.mecha.frangky.B05.com.conf` menjadi:
+```
+VirtualHost *:15000 *:15500
+```
+dengan demikian file dapat diakses melalui port :15000 dan :15500 
+![2021-10-30 (15)](https://user-images.githubusercontent.com/71221969/139532245-3f863d18-ad7f-48a8-adb6-4a02dcd09895.png)
+
+## Nomor 15 
+- Langkah 1: Membuat sebuah autentikasi username dan password pada server menggunakan :
+```
+htpasswd -c /etc/apache2/.htpasswd luffy 
+```
+- Langkah 2: Edit file `.htaccess` pada directory `general.mecha.franky.B07` dengan menambahkan:
+```
+AuthType Basic
+AuthName "Restricted Content"
+AuthUserFile /etc/apache2/.htpasswd
+Require valid-user
+```
+- Langkah 3: tambahkan code
+```
+<Directory /var/www/general.mecha.franky.e07.com>
+        AuthType Basic
+        AuthName "Restricted Content"
+        AuthUserFile /etc/apache2/.htpasswd
+        Require valid-user
+</Directory>
+```
+dalam file 
