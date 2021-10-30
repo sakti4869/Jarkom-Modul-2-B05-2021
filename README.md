@@ -35,4 +35,8 @@ Lalu dilakukan pengecekan dengan cara
 ![2021-10-29 (14)](https://user-images.githubusercontent.com/71221969/139473326-5a7f5ea3-1127-4431-ad79-58eeaf2ffba7.png)
 
 ## Nomor 5
-membuat Water7 sebagai DNS Slave untuk domain utama untuk memback up DNS master jika DNS master mati
+membuat Water7 sebagai DNS Slave untuk domain utama untuk memback up DNS master jika DNS master mati dengan cara menambahkan zone `frangky.B05.com` dengan tipe slave pada `Water7`
+![2021-10-30 (1)](https://user-images.githubusercontent.com/71221969/139519380-4bc7adb0-cc00-4c47-a31e-7b6a3bd9467b.png)<br>
+Lalu tidak lupa memberi tahu `EniesLobby` jika dia memiliki slave yaitu `Water7` dengan menambahkan:
+![2021-10-30](https://user-images.githubusercontent.com/71221969/139519894-318c097a-1bc1-4abc-bfb3-cf2c8258dad8.png)
+
