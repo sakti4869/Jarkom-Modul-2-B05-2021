@@ -52,4 +52,19 @@ membuat subdomain `mecha.frangky.B05.com` dengan alias `www.mecha.frangky.B05.co
 Menambahkan code seperti pada kotak hijau untuk membuat subdomain `general` kemudian diarahkan ke IP `Skypie`
 ![2021-10-30 (6)](https://user-images.githubusercontent.com/71221969/139529460-2917008f-502f-45b4-89c0-4b763973181c.png)
 
+## Nomor 8
+Menambahkan file `frangky.B05.com.conf` dengan isi:
+```
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/frangky.B05.com
+ServerName frangky.B05.com
+ServerAlias www.frangky.B05.com
+```
+pada directory `/etc/apache2/sites-available`
+![2021-10-30 (7)](https://user-images.githubusercontent.com/71221969/139529787-08ea7b0c-d305-403e-8534-37c4556f8733.png)
 
+Kemudian menambahkan directory `frangky.B05.com` dengan isi file yang telah didownload dari github `https://github.com/FeinardSlim/Praktikum-Modul-2-Jarkom`:
+![2021-10-30 (8)](https://user-images.githubusercontent.com/71221969/139530358-38e1fe50-6bc0-44ac-b5e7-361bef7d5ce5.png)
+
+Sehingga ketika dijalankan dengan `lynx frangky.B05.com`:
+![2021-10-30 (9)](https://user-images.githubusercontent.com/71221969/139530410-cf945dff-8fb8-4d8c-b3e0-fd8a15b9c235.png)
