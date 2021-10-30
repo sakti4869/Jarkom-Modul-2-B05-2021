@@ -191,3 +191,21 @@ DocumentRoot /var/www/frangky.B05.com
 ```
 pada `000-default.conf` Sehingga ketika dibuka dengan `lynx 192.179.2.4` akan menampilkan:
 ![2021-10-30 (9)](https://user-images.githubusercontent.com/71221969/139530726-ab9d14df-f991-4182-8856-7b94aa929344.png)
+
+## Nomor 17
+Setiap terdapat kata franky, maka otomatis langsung akan dialihkan ke `super.frangky.B05.com/public/images/franky.png`<br>
+ - Langkah 1: buat file .htaccess pada directory `/var/www/super.frangky.B05.com` dengan isi:
+```
+RewriteEngine On
+RewriteRule ^(.*)franky(.*)$ public/images/franky.png
+```
+ - Langkah 2: Pada file `super.frangky.B05.com.conf` dalam directory `/etc/apache2/sites-available`
+```
+<Directory /var/www/super.frangky.B05.com>
+        Options +FollowSymLinks -Multiviews
+        AllowOverride All
+</Directory>
+```
+ - Langkah 3: Kemudian dijalankan menggunakan `lynx super.frangky.B05.com/franky` lalu akan menampilkan:
+![2021-10-30 (16)](https://user-images.githubusercontent.com/71221969/139534850-5b5e7234-1152-4e12-8569-d95f062307b7.png)
+
