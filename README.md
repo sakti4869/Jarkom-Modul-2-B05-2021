@@ -68,3 +68,23 @@ Kemudian menambahkan directory `frangky.B05.com` dengan isi file yang telah dido
 
 Sehingga ketika dijalankan dengan `lynx frangky.B05.com`:
 ![2021-10-30 (9)](https://user-images.githubusercontent.com/71221969/139530410-cf945dff-8fb8-4d8c-b3e0-fd8a15b9c235.png)
+
+## Nomor 9
+Melakukan rewrite sehingga `www.franky.yyy.com/index.php/home` dapat menjadi menjadi `www.franky.yyy.com/home`<br>
+
+pada file `frangky.B05.com.conf` ditambah dengan 
+```
+<Directory /var/www/frangky.B05.com>
+        Options +FollowSymLinks -Multiviews
+        AllowOverride All
+</Directory>
+```
+Kemudian menambahkan file `.htaccess` dengan isi:
+```
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+```
+sehingga kita bisa access dengan `lynx www.franky.B05.com/home` lalu keluar halaman:
+![2021-10-30 (9)](https://user-images.githubusercontent.com/71221969/139530726-ab9d14df-f991-4182-8856-7b94aa929344.png)
+
