@@ -178,4 +178,4 @@ Require valid-user
         Require valid-user
 </Directory>
 ```
-dalam file 
+dalam file `general.mecha.frangky.B05.com.conf`
