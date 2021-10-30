@@ -63,7 +63,7 @@ ServerAlias www.frangky.B05.com
 pada directory `/etc/apache2/sites-available`
 ![2021-10-30 (7)](https://user-images.githubusercontent.com/71221969/139529787-08ea7b0c-d305-403e-8534-37c4556f8733.png)
 
-Kemudian menambahkan directory `frangky.B05.com` dengan isi file yang telah didownload dari github `https://github.com/FeinardSlim/Praktikum-Modul-2-Jarkom`:
+Kemudian menambahkan directory `frangky.B05.com` dengan isi file yang telah didownload dari github `https://github.com/FeinardSlim/Praktikum-Modul-2-Jarkom`bagian `franky`:
 ![2021-10-30 (8)](https://user-images.githubusercontent.com/71221969/139530358-38e1fe50-6bc0-44ac-b5e7-361bef7d5ce5.png)
 
 Sehingga ketika dijalankan dengan `lynx frangky.B05.com`:
@@ -87,4 +87,54 @@ RewriteRule ^([^\.]+)$ $1.html [NC,L]
 ```
 sehingga kita bisa access dengan `lynx www.franky.B05.com/home` lalu keluar halaman:
 ![2021-10-30 (9)](https://user-images.githubusercontent.com/71221969/139530726-ab9d14df-f991-4182-8856-7b94aa929344.png)
+
+## Nomor 10
+Membuat subdomain `www.super.frangky.B05.com` yang memiliki DocumentRoot pada `/var/www/super.franky.B05.com`<br>
+
+ - Langkah 1:
+Menambahkan directory `super.frangky.B05.com` yang digunakan untuk menyimpan file yang telah di download dari `https://github.com/FeinardSlim/Praktikum-Modul-2-Jarkom` bagian `super.franky`:<br>
+ - Langkah 2: 
+Menambahkan file `super.frangky.B05.com.conf` dengan isi:
+```
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/super.frangky.B05.com
+ServerName super.frangky.B05.com
+ServerAlias www.super.frangky.B05.com
+```
+ - Langkah 3: 
+Dilakukan pengecekan menggunakan `lynx super.frangky.B05.com`:
+![2021-10-30 (10)](https://user-images.githubusercontent.com/71221969/139531089-f68bf51a-6704-4773-8742-144017493440.png)
+
+## Nomor 11
+hanya dapat melakukan directory listing saja pada folder `public` pada `/var/www/super.frangky.B05.com`<br>
+Dapat dilakukan dengan cara menambahkan code:
+```
+<Directory /var/www/super.frangky.B05.com/public/js>
+        Options -Indexes
+</Directory>
+
+<Directory /var/www/super.frangky.B05.com/public/images>
+        Options -Indexes
+</Directory>
+
+<Directory /var/www/super.frangky.B05.com/public/css>
+        Options -Indexes
+</Directory>
+```
+pada file `super.frangky.B05.com.conf`. Sehingga ketika folder dalam `public` dibuka akan menampilkan:
+![2021-10-30 (11)](https://user-images.githubusercontent.com/71221969/139531272-106e2748-0bc8-475f-9d97-98ad00cafed8.png)
+
+## Nomor 12
+Pada file `super.frangky.B05.com.conf` ditambahkan `ErrorDocument 404 /error/404.html` untuk melemparkan jika dns tidak sesuai akan dilempar ke file `404.html` pada directory `/var/www/super.frangky.B05.com/error`<br>
+Ketika mengakses dengan `lynx super.frangky.B05.com/hsahs` akan menampilkan:
+![2021-10-30 (12)](https://user-images.githubusercontent.com/71221969/139531488-31d0f380-bee2-40d4-aebf-e11d7e20c00a.png)
+
+## Nomor 13
+dapat mengakses file asset `www.super.frangky.B05.com/public/js` menjadi `www.super.frangky.B05.com/js` dapat dilakukan dengan directory alias yaitu menambahkan 
+```
+Alias "/js" "/var/www/super.frangky.B05.com/public/js"
+```
+pada file `super.frangky.B05.com.conf`<br>
+Ketika dilakukan pengecekan `lynx super.frangky.B05.com/js` akan menampilkan folder js dalam public yang mana sebelumnya telah di forbiden:
+![2021-10-30 (11)](https://user-images.githubusercontent.com/71221969/139531272-106e2748-0bc8-475f-9d97-98ad00cafed8.png)
 
