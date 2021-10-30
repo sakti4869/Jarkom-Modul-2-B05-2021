@@ -40,3 +40,16 @@ membuat Water7 sebagai DNS Slave untuk domain utama untuk memback up DNS master 
 Lalu tidak lupa memberi tahu `EniesLobby` jika dia memiliki slave yaitu `Water7` dengan menambahkan:
 ![2021-10-30](https://user-images.githubusercontent.com/71221969/139519894-318c097a-1bc1-4abc-bfb3-cf2c8258dad8.png)
 
+## Nomor 6
+membuat subdomain `mecha.frangky.B05.com` dengan alias `www.mecha.frangky.B05.com` yang didelegasikan dari EniesLobby ke Water7 dengan IP menuju ke Skypie dalam folder sunnygo
+
+ - Langkah 1: Tambahkan code seperti pada kotak kuning pada `EniesLobby` pada file `frangky.B05.com`
+![2021-10-30 (4)](https://user-images.githubusercontent.com/71221969/139529227-afbdd785-4e8b-49ff-a7cf-94f58a3ace70.png)
+ - Langkah 2: Tambahkan code seperti pada gambar pada `Sunnygo`:
+![2021-10-30 (6)](https://user-images.githubusercontent.com/71221969/139529386-925dcdcb-b2c2-4f11-91cd-b31ebd5e0ee7.png)
+
+## Nomor 7
+Menambahkan code seperti pada kotak hijau untuk membuat subdomain `general` kemudian diarahkan ke IP `Skypie`
+![2021-10-30 (6)](https://user-images.githubusercontent.com/71221969/139529460-2917008f-502f-45b4-89c0-4b763973181c.png)
+
+
