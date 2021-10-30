@@ -179,3 +179,15 @@ Require valid-user
 </Directory>
 ```
 dalam file `general.mecha.frangky.B05.com.conf`
+- Langkah 4: Kemudian cek menggunakan `lynx frangky.B05.com:15000` maka akan me redirect menuju `frangky.B05.com`
+![2021-10-30 (13)](https://user-images.githubusercontent.com/71221969/139533794-87f1ac3e-3f42-4573-adfa-652cddc50bd7.png)
+![2021-10-30 (14)](https://user-images.githubusercontent.com/71221969/139533828-2e6e38b4-4899-4dab-a549-a25bc347f2cc.png)
+
+## Nomor 16
+Setiap kali mengakses IP Skypie akan dialihkan secara otomatis ke `www.franky.B05.com` maka tinggal tambahkan code
+```
+ServerAdmin webmaster@localhost
+DocumentRoot /var/www/frangky.B05.com
+```
+pada `000-default.conf` Sehingga ketika dibuka dengan `lynx 192.179.2.4` akan menampilkan:
+![2021-10-30 (9)](https://user-images.githubusercontent.com/71221969/139530726-ab9d14df-f991-4182-8856-7b94aa929344.png)
