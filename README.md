@@ -1,5 +1,13 @@
 # Jarkom-Modul-2-B05-2021
 
+## Anggota Kelompok ##
+
+Ivan Muhammad Nizar 05111940000052
+
+Aji Wahyu Admaja Utama 05111940000073
+
+Muhammad Haikal Aria Sakti 05111940000088
+
 ## Nomor 1
 Pada soal nomor 1 diminta untuk membuat Topologi yang nantinya EniesLobby akan dijadikan sebagai DNS Master, Water7 akan dijadikan DNS Slave, dan Skypie akan digunakan sebagai Web Server. Terdapat 2 Client yaitu Loguetown, dan Alabasta. Semua node terhubung pada router Foosha, sehingga dapat mengakses internet:
 ![2021-10-29](https://user-images.githubusercontent.com/71221969/139354127-69f0f318-e934-4337-8240-a2521002b7f9.png)
